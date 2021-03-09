@@ -7,17 +7,20 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import Modelo.Modelo;
+
 public class Vista {
 
 	JTextField cajatext = new JTextField(30);
 	ArrayList<JButton> btn = new ArrayList();
 	JPanel panel = new JPanel();
 	JFrame frame = new JFrame();
+	Modelo modelo = new Modelo();
 
 	public Vista() {
 
 		for (int i = 0; i < 3; i++) {
-			panel.add(new JButton());
+			panel.add(new JButton(modelo.getTxtbtn().get(i)));
 		}
 		panel.add(cajatext);
 		frame.setSize(400, 400);
