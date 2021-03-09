@@ -6,6 +6,7 @@ public class Español {
 
 	private ArrayList español;
 	private ArrayList dEspañol;
+	
 
 	public Español() {
 
